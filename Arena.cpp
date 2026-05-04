@@ -28,7 +28,7 @@ void load_config(std::string filename) {
         std::stringstream ss(line);
         ss >> key;
         if (key == "Arena_Size:") {
-            char x; ss >> rows >> cols;
+            ss >> rows >> cols;
         } else if (key == "Max_Rounds:") ss >> maxRounds;
         else if (key == "Sleep_interval:") ss >> sleepInterval;
         else if (key == "Game_State_Live:") {
